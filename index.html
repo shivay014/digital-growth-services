@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Growth Services | Grow Your Business Online</title>
+
+    <meta name="description" content="Digital marketing services including Meta Ads, Google Business Profile, Instagram Marketing, Reels Editing, WhatsApp Marketing, Landing Pages, Amazon Ads and E-commerce solutions.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f8fc;
+            color: #111827;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            background: white;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 90px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #eef4ff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.15;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 25px auto;
+            font-size: 19px;
+            color: #4b5563;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .secondary {
+            background: #111827;
+            color: white;
+        }
+
+        /* SERVICES */
+
+        .section {
+            padding: 75px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+        }
+
+        .section-title p {
+            color: #6b7280;
+            margin-top: 10px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .service-card p {
+            color: #6b7280;
+            font-size: 15px;
+        }
+
+        /* WHY US */
+
+        .why {
+            background: white;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .feature {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .feature h3 {
+            margin: 12px 0;
+        }
+
+        .feature p {
+            color: #6b7280;
+        }
+
+        /* PROCESS */
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .step {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .number {
+            width: 45px;
+            height: 45px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .step h3 {
+            margin: 15px 0 8px;
+        }
+
+        /* CTA */
+
+        .cta {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+        }
+
+        .cta p {
+            color: #d1d5db;
+            margin: 15px auto 25px;
+            max-width: 650px;
+        }
+
+        /* CONTACT */
+
+        .contact-box {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .contact-box input,
+        .contact-box textarea,
+        .contact-box select {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+
+        .contact-box button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 7px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0b1120;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .services {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .process {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .process {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title h2 {
+                font-size: 29px;
+            }
+
+            .nav-btn {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+    <div class="container nav-content">
+        <div class="logo">Digital Growth</div>
+
+        <a href="#contact" class="nav-btn">
+            Get Started
+        </a>
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <h1>
+            Grow Your Business
+            <span>Online</span>
+        </h1>
+
+        <p>
+            We help businesses get more visibility, leads and sales
+            through digital marketing, advertising and e-commerce solutions.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#contact" class="btn primary">
+                Get Free Consultation
+            </a>
+
+            <a href="https://wa.me/YOUR_NUMBER"
+               class="btn secondary">
+                Chat on WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Services</h2>
+
+            <p>
+                Everything you need to grow your business online.
+            </p>
+
+        </div>
+
+
+        <div class="services">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">📍</div>
+
+                <h3>Google Business Profile</h3>
+
+                <p>
+                    Improve your business visibility on Google Search
+                    and Google Maps and attract more local customers.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">📢</div>
+
+                <h3>Meta Ads</h3>
+
+                <p>
+                    Reach your ideal customers through Facebook and
+                    Instagram advertising campaigns.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">📱</div>
+
+                <h3>Instagram Marketing</h3>
+
+                <p>
+                    Build your Instagram presence through content,
+                    Reels and audience growth strategies.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🎬</div>
+
+                <h3>Reels Editing</h3>
+
+                <p>
+                    Create engaging short-form videos designed for
+                    Instagram, Facebook and other platforms.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">💬</div>
+
+                <h3>WhatsApp Marketing</h3>
+
+                <p>
+                    Connect with customers and generate opportunities
+                    through WhatsApp marketing and follow-ups.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🌐</div>
+
+                <h3>Landing Page</h3>
+
+                <p>
+                    High-converting landing pages designed to turn
+                    advertising traffic into leads.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🛒</div>
+
+                <h3>Amazon Ads</h3>
+
+                <p>
+                    Amazon advertising solutions designed to improve
+                    product visibility and generate sales.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🛍️</div>
+
+                <h3>E-commerce Business</h3>
+
+                <p>
+                    Get support with online selling, marketplace
+                    strategy and e-commerce growth.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="section why">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Why Work With Us?</h2>
+
+            <p>
+                Simple strategies focused on business growth.
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+
+            <div class="feature">
+
+                <div class="service-icon">🎯</div>
+
+                <h3>Focused Strategy</h3>
+
+                <p>
+                    We focus on the right platform and marketing
+                    strategy for your business.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="service-icon">📊</div>
+
+                <h3>Data Driven</h3>
+
+                <p>
+                    Campaign performance and customer response
+                    are used to improve marketing decisions.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="service-icon">🚀</div>
+
+                <h3>Growth Focused</h3>
+
+                <p>
+                    Our goal is to help businesses improve visibility,
+                    generate leads and increase opportunities.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>How It Works</h2>
+
+            <p>
+                Getting started is simple.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+
+            <div class="step">
+
+                <div class="number">1</div>
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    Tell us about your business and your goals.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">2</div>
+
+                <h3>Understand</h3>
+
+                <p>
+                    We understand your business and marketing needs.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">3</div>
+
+                <h3>Strategy</h3>
+
+                <p>
+                    We choose the right services and marketing approach.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="number">4</div>
+
+                <h3>Grow</h3>
+
+                <p>
+                    We execute, measure and improve the strategy.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>Ready to Grow Your Business?</h2>
+
+    <p>
+        Let's discuss your business and find the right digital
+        marketing solution for you.
+    </p>
+
+    <a href="#contact" class="btn primary">
+        Get Free Consultation
+    </a>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Let's Talk</h2>
+
+            <p>
+                Tell us about your business.
+            </p>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Business Name"
+                >
+
+                <select>
+
+                    <option>
+                        Select Service
+                    </option>
+
+                    <option>
+                        Google Business Profile
+                    </option>
+
+                    <option>
+                        Meta Ads
+                    </option>
+
+                    <option>
+                        Instagram Marketing
+                    </option>
+
+                    <option>
+                        Reels Editing
+                    </option>
+
+                    <option>
+                        WhatsApp Marketing
+                    </option>
+
+                    <option>
+                        Landing Page
+                    </option>
+
+                    <option>
+                        Amazon Ads
+                    </option>
+
+                    <option>
+                        E-commerce Business
+                    </option>
+
+                </select>
+
+
+                <textarea
+                    rows="5"
+                    placeholder="Tell us about your requirement">
+                </textarea>
+
+
+                <button type="submit">
+                    Get Free Consultation
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Digital Growth Services. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
