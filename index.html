@@ -519,12 +519,286 @@ src="https://www.facebook.com/tr?id=2181630739903015&ev=PageView&noscript=1"
     .ebook-content h2 {
         font-size: 27px;
     }
+}/* EBOOK PAYMENT */
+
+.ebook-payment {
+    background: #f7f8fc;
+}
+
+.payment-card {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+}
+
+.payment-badge {
+    display: inline-block;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.payment-info h2 {
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.payment-description {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.payment-price {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+.payment-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.payment-step span {
+    min-width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.payment-step p {
+    margin: 3px 0 0;
+    color: #374151;
+}
+
+
+.qr-payment {
+    text-align: center;
+}
+
+.qr-box {
+    width: 230px;
+    height: 230px;
+    margin: 0 auto 15px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upi-qr {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.scan-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #111827;
+    margin-bottom: 18px;
+}
+
+.upi-id-box {
+    background: #f3f4f6;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.upi-id-box span {
+    display: block;
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+.upi-id-box strong {
+    display: block;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.upi-id-box button {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.payment-whatsapp-btn {
+    display: block;
+    text-decoration: none;
+    background: #111827;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.payment-whatsapp-btn:hover {
+    transform: translateY(-2px);
+}
+
+.payment-note {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 700px) {
+
+    .payment-card {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 30px;
+    }
+
+    .payment-info h2 {
+        font-size: 25px;
+    }
+
+    .qr-box {
+        width: 210px;
+        height: 210px;
+    }
 }
     </style>
 </head>
 
 <body>
+<!-- EBOOK PAYMENT SECTION -->
 
+<section class="section ebook-payment" id="ebook-payment">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Complete Your Purchase</h2>
+            <p>Pay ₹199 using UPI and get your Meta Ads eBook.</p>
+        </div>
+
+        <div class="payment-card">
+
+            <div class="payment-info">
+
+                <span class="payment-badge">
+                    META ADS MASTERY
+                </span>
+
+                <h2>Meta Ads Mastery — 2026 Edition</h2>
+
+                <p class="payment-description">
+                    Practical guide to Meta Ads, audience targeting,
+                    creatives, campaigns, Pixel, optimization and more.
+                </p>
+
+                <div class="payment-price">
+                    ₹199
+                </div>
+
+                <div class="payment-step">
+                    <span>1</span>
+                    <p>Scan the QR code using any UPI app.</p>
+                </div>
+
+                <div class="payment-step">
+                    <span>2</span>
+                    <p>Pay exactly <strong>₹199</strong>.</p>
+                </div>
+
+                <div class="payment-step">
+                    <span>3</span>
+                    <p>Take a screenshot of your successful payment.</p>
+                </div>
+
+                <div class="payment-step">
+                    <span>4</span>
+                    <p>Send the screenshot on WhatsApp.</p>
+                </div>
+
+            </div>
+
+
+            <div class="qr-payment">
+
+                <div class="qr-box">
+
+                    <!-- APNA QR IMAGE YAHAN LAGANA HAI -->
+                    <img src="upi-qr.png"
+                         alt="UPI QR Code"
+                         class="upi-qr">
+
+                </div>
+
+                <p class="scan-text">
+                    Scan & Pay ₹199
+                </p>
+
+                <div class="upi-id-box">
+
+                    <span>UPI ID</span>
+
+                    <strong id="upiId">
+                        YOUR-UPI-ID@upi
+                    </strong>
+
+                    <button onclick="copyUPI()">
+                        Copy UPI ID
+                    </button>
+
+                </div>
+
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20have%20paid%20₹199%20for%20the%20Meta%20Ads%20eBook.%20I%20am%20sending%20my%20payment%20screenshot."
+                   target="_blank"
+                   class="payment-whatsapp-btn">
+
+                    I Have Paid — Send Screenshot
+
+                </a>
+
+                <p class="payment-note">
+                    After payment, send your payment screenshot
+                    on WhatsApp for verification.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END EBOOK PAYMENT SECTION -->
 <!-- NAVBAR -->
 
 <nav>
@@ -1122,6 +1396,15 @@ src="https://www.facebook.com/tr?id=2181630739903015&ev=PageView&noscript=1"
 
 </footer>
 
+<script>
+function copyUPI() {
 
+    const upi = document.getElementById("upiId").innerText;
+
+    navigator.clipboard.writeText(upi);
+
+    alert("UPI ID copied!");
+}
+</script>
 </body>
 </html>
