@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+f<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Meta Pixel Code -->
@@ -381,6 +381,144 @@ src="https://www.facebook.com/tr?id=2181630739903015&ev=PageView&noscript=1"
     .hero-banner-image img {
         border-radius: 14px;
     }
+}/* EBOOK SECTION */
+
+.ebook-section {
+    background: #f7f8fc;
+}
+
+.ebook-card {
+    background: white;
+    max-width: 950px;
+    margin: auto;
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.ebook-cover {
+    background: linear-gradient(135deg, #111827, #2563eb);
+    min-height: 380px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 12px 30px rgba(37,99,235,0.18);
+}
+
+.ebook-cover-content h3 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.ebook-cover-content p {
+    color: #dbeafe;
+    font-size: 16px;
+}
+
+.ebook-badge {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.ebook-content h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.ebook-content > p {
+    color: #6b7280;
+    margin-bottom: 22px;
+}
+
+.ebook-features {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.ebook-features li {
+    margin-bottom: 12px;
+    color: #374151;
+}
+
+.ebook-features li::before {
+    content: "✓";
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.ebook-price {
+    margin: 20px 0;
+}
+
+.ebook-old-price {
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.ebook-new-price {
+    color: #111827;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.ebook-buy-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.ebook-buy-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.ebook-note {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+@media (max-width: 700px) {
+    .ebook-card {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 30px;
+    }
+
+    .ebook-cover {
+        min-height: 300px;
+    }
+
+    .ebook-content h2 {
+        font-size: 27px;
+    }
 }
     </style>
 </head>
@@ -396,6 +534,9 @@ src="https://www.facebook.com/tr?id=2181630739903015&ev=PageView&noscript=1"
         <a href="#contact" class="nav-btn">
             Get Started
         </a>
+        <a href="#ebook" class="nav-btn">
+    eBook ₹199
+</a>
     </div>
 </nav>
 
@@ -577,7 +718,115 @@ src="https://www.facebook.com/tr?id=2181630739903015&ev=PageView&noscript=1"
     </div>
 
 </section>
+<!-- EBOOK SECTION -->
 
+<section class="section ebook-section" id="ebook">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Learn Meta Ads & Digital Marketing</h2>
+            <p>
+                Practical knowledge to understand Meta Ads and build better
+                digital marketing campaigns.
+            </p>
+        </div>
+
+        <div class="ebook-card">
+
+            <!-- EBOOK COVER -->
+            <div class="ebook-cover">
+
+                <div class="ebook-cover-content">
+
+                    <span class="ebook-badge">
+                        2026 EDITION
+                    </span>
+
+                    <h3>
+                        META ADS<br>
+                        MASTERY
+                    </h3>
+
+                    <p>
+                        A Practical Guide to Meta Ads & Digital Marketing
+                    </p>
+
+                    <p style="margin-top:25px; font-weight:bold;">
+                        Digital Growth
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EBOOK DETAILS -->
+            <div class="ebook-content">
+
+                <h2>
+                    Meta Ads Mastery — 2026 Edition
+                </h2>
+
+                <p>
+                    Learn how Meta Ads work, how to structure campaigns,
+                    understand audiences, creatives, budgets, funnels,
+                    tracking and optimization in a simple practical way.
+                </p>
+
+
+                <ul class="ebook-features">
+
+                    <li>Meta Ads fundamentals</li>
+
+                    <li>Campaign objectives & funnel</li>
+
+                    <li>Audience targeting & research</li>
+
+                    <li>Creative, hooks & ad copy</li>
+
+                    <li>Budget & campaign structure</li>
+
+                    <li>Pixel, Events & tracking basics</li>
+
+                    <li>Optimization & scaling concepts</li>
+
+                    <li>Practical 2026 strategies</li>
+
+                </ul>
+
+
+                <div class="ebook-price">
+
+                    <span class="ebook-old-price">
+                        ₹499
+                    </span>
+
+                    <span class="ebook-new-price">
+                        ₹199
+                    </span>
+
+                </div>
+
+
+                <!-- PAYMENT LINK WILL BE ADDED HERE -->
+                <a href="#" class="ebook-buy-btn" id="ebookBuyBtn">
+                    Buy eBook — ₹199
+                </a>
+
+                <div class="ebook-note">
+                    Secure online payment • UPI • Cards • Net Banking
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END EBOOK SECTION -->
 
 <!-- WHY CHOOSE US -->
 
